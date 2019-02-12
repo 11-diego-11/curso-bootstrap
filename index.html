@@ -22,7 +22,7 @@
 					<a href="#" class="d-block d-md-inline-block mx-3">Início</a>
 					<a href="#" class="d-block d-md-inline-block mx-3">Sobre</a>
 					<a href="#" class="d-block d-md-inline-block mx-3">Contato</a>
-					<a href="#" class="d-block d-md-inline-block mx-3 metar-lg-0 btn btn-green" data-toggle="modal" data-target="#cadastro_modal">Cadastra-se</a>
+					<a href="#" class="d-block d-md-inline-block mx-3 metar-lg-0 btn btn-green btn-disabled" data-toggle="modal" data-target="#cadastro_modal">Cadastra-se</a>
 				</nav>
 			</div>
 		</div>
@@ -67,7 +67,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="modal"id="cadastro_modal" tabindex="-1" role="dialog">
+	<div class="modal fade"id="cadastro_modal" tabindex="-1" role="dialog">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
@@ -77,18 +77,53 @@
 	        </button>
 	      </div>
 	      <div class="modal-body">
-	        <p>Insira seus dados abaixo</p>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-primary">Salvar</button>
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
+    		<form>
+					  	<div class="form-group">
+						    <label for="input_nome">Nome:</label>
+						    <input type="text" class="form-control" id="input_nome" placeholder="Escreva o seu nome">
+						    <small id="input_nome" class="form-text text-muted">Informe o nome completo, sem abreviações.</small>
+						</div>
+						<div class="form-group">
+						    <label for="input_email">E-mail:</label>
+						    <input type="e-mail" class="form-control" id="input_email" placeholder="Informe o seu e-mail">
+						    <small id="input_email" class="form-text text-muted">Informe um enedereço de e-mail válido.</small>
+						</div>
+						<div class="form-row">
+							<div class="col-form">
+								<label for="input_senha">Login:</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											@
+										</div>
+									</div>
+						    	<input type="text" class="form-control" id="input_user-name" placeholder="Digite o seu login">
+						    	</div>
+							</div>
+							
+							<div class="col-form">
+								<label for="input_senha">Senha:</label>
+						    	<input type="password" class="form-control" id="input_senha" placeholder="Digite a sua senha">
+							</div>
+						</div>
+						
+							
+						
+
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-primary">Salvar</button>
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			</form>
+		  </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>			
+<script type="text/javascript" src="js/bootstrap.js"></script>	
+<script type="text/javascript" src="js/main.js"></script>		
 </body>
 </html>
 			
