@@ -1,73 +1,136 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Curso Bootstrap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans|Poppins:400,600" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<title>Curso Bootstrap</title>
-
 </head>
 <body>
 	<div class="container">
-		<div class="row align-items-center"id="header">
-			<div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-start">
+		<div class="navbar navbar-expand-lg" id="#header">
+			
+			<div class="col-10 col-lg-6 d-flex">
 				<h1>Curso Bootstrap no Infnet</h1>
 			</div>
-
-			<div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end">
-				<nav class="float-md-right text-center d-block">
-					<a href="#" class="d-block d-md-inline-block mx-3">Início</a>
-					<a href="#" class="d-block d-md-inline-block mx-3">Sobre</a>
-					<a href="#" class="d-block d-md-inline-block mx-3">Contato</a>
-					<a href="#" class="d-block d-md-inline-block mx-3 metar-lg-0 btn btn-green btn-disabled" data-toggle="modal" data-target="#cadastro_modal">Cadastra-se</a>
+			<div class="navbar-toggler" data-toggle="collapse" data-target="#header_collapse"><div class="burger">MENU</div></div>
+			<div id="header_collapse" class="collapse navbar-collapse col-lg-6"> 
+				<nav class="float-md-right text-center">
+					<a href="#" class="d-block d-md-inline-block mx-2">Início</a>
+					<a href="#" class="d-block d-md-inline-block mx-2">Sobre</a>
+					<a href="#" class="d-block d-md-inline-block mx-2">Contato</a>
+					<a href="#" class="d-block d-md-inline-block mx-2 mr-lg-0 btn btn-green btn-disabled" data-toggle="modal" data-target="#cadastro_modal">Cadastre-se</a>
 				</nav>
 			</div>
+
 		</div>
 		<div class="row" id="destaque">
-			<div class="col-12 col-md-6 order-md-2 col-lg-4">
+			<div class="col-12 col-md-6 col-lg-4 order-md-2">
 				<img class="img-fluid" src="img/destaque.png">
 			</div>
-			<div class="col-12 col-md-6 order-md-1 col-lg-4 offset-lg-2">
-				<h2 class="mt-5 font-weight-bold">Lorem ipsum dolor sit amet
-				</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. 
-				</p>
-				<button class="btn btn-green" data-toggle="modal" data-target="#cadastro_modal">Inicie Gratuitamente</button>
+			<div class="col-12 col-md-6 col-lg-4 offset-lg-2 order-md-1">
+				<h2 class="mt-5 font-weight-bold">Lorem ipsum dolor sit amet</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				<button class="btn btn-green" data-toggle="modal" data-target="#cadastro_modal">Inicie gratuitamente</button>
 			</div>
-				
 		</div>
 	</div>
 	<div id="clientes">
 		<div class="container">
 			<div class="row">
 				<div class="col-8 mx-auto" id="clientes-box">
-					<h3 class="title">Nossos Clientes</h3>
+					<h3 class="title">Nossos clientes</h3>
 					<div class="row align-items-center">
 						<div class="col-12 col-md-6 col-lg-3">
-							<img class= "img-fluid"src="img/cliente-cnbc.png" alt="cnbc">
+							<img class="img-fluid" src="img/cliente-cnbc.png" alt="CNBC">
 						</div>
 						<div class="col-12 col-md-6 col-lg-3">
-							<img class= "img-fluid"src="img/cliente-fox.png" style="height:60px" alt="FOX">
+							<img class="img-fluid" src="img/cliente-fox.png" alt="Fox">
 						</div>
 						<div class="col-12 col-md-6 col-lg-3">
-							<img class= "img-fluid"src="img/cliente-abc.png" alt="ABC">
+							<img class="img-fluid" src="img/cliente-abc.png" alt="ABC">
 						</div>
 						<div class="col-12 col-md-6 col-lg-3">
-							<img class= "img-fluid"src="img/cliente-phunt.png" alt="Product Hunt">
+							<img class="img-fluid" src="img/cliente-product-hunt.png" alt="Product Hunt">
 						</div>
 					</div>
 				</div>
 			</div>
+
+			<div class="row text-center">
+				<div class="col col-md-8 col-lg-6 mx-auto" id="vendas">
+					<h3>Aumente suas vendas em 3X</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+					<p id="vendas_collapse" class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a data-toggle="collapse" href="#vendas_collapse">Ver mais</a>
+					<img class="img-fluid d-block mx-auto" src="img/dashboard.png" alt="Dashboard">
+					<a href="#" class="btn btn-green">Inicie agora de graça!</a>
+				</div>
+			</div>
+
+			<div class="row align-items-center feature">
+				<div class="col col-4 offset-1">
+					<h4>Lorem ipsum dolor sit amet</h4>
+					<p>Lorem ipsum dolor sit amet, <span class="font-weight-bold">consectetur adipisicing</span> elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+				</div>
+				<div class="col col-4 offset-2">
+					<img class="img-fluid" src="img/cliente.png" alt="Cliente feliz" />
+				</div>
+			</div>
+
+			<div class="row align-items-center feature">
+				<div class="col col-4 offset-1">
+					<img class="img-fluid" src="img/mensagem.gif" alt="Imagem de carta" />
+				</div>
+				<div class="col col-4 offset-1">
+					<h4>Lorem ipsum dolor sit amet</h4>
+					<p>Lorem ipsum dolor sit amet, <span class="font-weight-bold">consectetur adipisicing</span> elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+				</div>
+			</div>
+
+			<div class="row align-items-center feature">
+				<div class="col col-4 offset-1">
+					<h4>Lorem ipsum dolor sit amet</h4>
+					<p>Lorem ipsum dolor sit amet, <span class="font-weight-bold">consectetur adipisicing</span> elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+				</div>
+				<div class="col col-3 offset-2">
+					<img class="img-fluid " src="img/celular.gif" alt="Smartphone" />
+				</div>
+			</div>		
+
+			<div class="row align-items-center feature">
+				<div class="col col-4 offset-1">
+					<img class="img-fluid" src="img/formulario.gif" alt="Formulário" />
+				</div>
+				<div class="col col-4 offset-1">
+					<h4>Lorem ipsum dolor sit amet</h4>
+					<p>Lorem ipsum dolor sit amet, <span class="font-weight-bold">consectetur adipisicing</span> elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="modal fade"id="cadastro_modal" tabindex="-1" role="dialog">
+
+
+
+	<div class="modal fade" id="cadastro_modal" tabindex="-1" role="dialog">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
@@ -77,58 +140,48 @@
 	        </button>
 	      </div>
 	      <div class="modal-body">
-    		<form>
-					  	<div class="form-group">
-						    <label for="input_nome">Nome:</label>
-						    <input type="text" class="form-control" id="input_nome" placeholder="Escreva o seu nome">
-						    <small id="input_nome" class="form-text text-muted">Informe o nome completo, sem abreviações.</small>
-						</div>
+	      	<form>
+				<div class="form-group">
+					<label for="input_nome">Nome</label>
+					<input type="text" class="form-control" id="input_nome" placeholder="Escreva seu nome">
+				</div>
+				<div class="form-group">
+					<label for="input_email">E-mail</label>
+					<input type="text" class="form-control" id="input_email" aria-describedby="dicaDoCampoEmail" placeholder="Escreva seu e-mail">
+					<small id="dicaDoCampoEmail" class="form-text text-muted">Nós não compartilharemos seu e-mail com mais ninguém.</small>
+				</div>
+				<div class="form-row">
+					<div class="col-form">
 						<div class="form-group">
-						    <label for="input_email">E-mail:</label>
-						    <input type="e-mail" class="form-control" id="input_email" placeholder="Informe o seu e-mail">
-						    <small id="input_email" class="form-text text-muted">Informe um enedereço de e-mail válido.</small>
-						</div>
-						<div class="form-row">
-							<div class="col-form">
-								<label for="input_senha">Login:</label>
-								<div class="input-group">
-									<div class="input-group-prepend">
-										<div class="input-group-text">
-											@
-										</div>
-									</div>
-						    	<input type="text" class="form-control" id="input_user-name" placeholder="Digite o seu login">
-						    	</div>
-							</div>
-							
-							<div class="col-form">
-								<label for="input_senha">Senha:</label>
-						    	<input type="password" class="form-control" id="input_senha" placeholder="Digite a sua senha">
+							<label for="input_nome_usuario">Login</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">@</div>
+								</div>
+								<input type="text" class="form-control" id="input_nome_usuario" placeholder="Escreva seu login">
 							</div>
 						</div>
-						
-							
-						
+					</div>
+					<div class="col-form">
+						<div class="form-group">
+							<label for="input_senha">Senha</label>
+							<input type="password" class="form-control" id="input_senha" placeholder="Escreva sua senha">
+						</div>
+					</div>
+				</div>
+	      	</form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary">Salvar</button>
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-primary">Salvar</button>
-			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-			</form>
-		  </div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>	
-<script type="text/javascript" src="js/main.js"></script>		
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
-			
-
-
-
-			
-
